@@ -162,4 +162,33 @@ video{
     color: #2b2b2b;
     padding: 2%;
   }
+  .loading{
+    width: 100vw;
+    height: 100vh;
+    background-color:#f5dfdf ;
+    position: fixed;
+    z-index: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+  }
+
+  .loading i{
+    color: white;
+    font-size: 64px;
+    animation-name: rotar;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    
+  }
+  @keyframes rotar{
+    0%{
+        transform: rotateZ(0deg);
+
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+  }
 
