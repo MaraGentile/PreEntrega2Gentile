@@ -25,7 +25,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../screens/productos.html">Productos</a>
@@ -50,51 +50,30 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="well well-sm">
-                        <form class="form-horizontal" method="post">
-                            <fieldset>
-                                <legend class="text-center header">Contactanos</legend>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-user"></i></span>
-                                    <div class="col-md-8">
-                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-user"></i></i></span>
-                                    <div class="col-md-8">
-                                        <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
-                                    </div>
-                                </div>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-envelope"></i></span>
-                                    <div class="col-md-8">
-                                        <input id="email" name="email" type="text" placeholder="Email" class="form-control">
-                                    </div>
-                                </div>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-mobile"></i></span>
-                                    <div class="col-md-8">
-                                        <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
-                                    </div>
-                                </div>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-pen"></i></span>
-                                    <div class="col-md-8">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Ingrese su mensaje y nos contactaremos a la brevedad" rows="7"></textarea>
-                                    </div>
-                                </div>
-        
-                                <div class="form-group">
-                                    <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                                    </div>
-                                </div>
-                            </fieldset>
+                       
+                        <form class="formulario" action="#" id="formulario" >
+                            <div>
+                                <fieldset>
+                                    <h2>Contacto</h2>
+                                    <span class="required_notification">* Datos requeridos</span></br>
+                                        <div>
+                                            <label for="nombre">Nombre:</label></br>
+                                            <input type="text" name="nombre" placeholder="Nombre" required /></br>
+                                        </div>
+                                        <div>
+                                            <label for="email">Email:</label></br>
+                                            <input type="email" name="email" placeholder="example@email.com" required /></br>
+                                        </div>
+                                        
+                                        <div>
+                                            <label for="message">Mensaje:</label></br>
+                                            <textarea name="message" cols="40" rows="6" required></textarea></br>
+                                        </div>
+                                        <button class="submit" type="submit">Enviar</button></br>
+                                </fieldset>
+                            </div>
                         </form>
+                    
                     </div>
                 </div>
             </div>

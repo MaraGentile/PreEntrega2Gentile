@@ -1,205 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.logo{
-    width: 48px;
-    margin: 10px;
-    position: absolute;
-    left: 10px;
-}
-.navbar{
-    background-color: #F2D1B3 ;
-    display: flex;
-    justify-content:center;
-    position: relative;
-}
-.navbar > ul {
-    list-style: none;
-    display: flex;
-    justify-content: end;
-}
-.navbar > ul > li{
-    position: relative;
-}
-.navbar > ul > li:hover ul{
-    max-height: 300px;
-    transition: 0.5s;
-}
-.navbar  ul  li  a{
-    display: block;
-    text-decoration: none;
-    color: #59554D;
-    font-size: 20px;
-    padding: 20px;
+body {
+  background: #25455e;
+  color: #fffefe;
+  font-family: Arial, san-serif;
 }
 
-.navbar > ul > li > ul {
-    max-height: 0;
-    overflow: hidden;
-    position: absolute;
-    list-style-type: none;
-    background-color:#F2D1B3;
-    left: -12px;
-}
-.tarjeta{
-    display: n;
-    width: 55%;
-    border: solid 2px;
-    border-radius: 8px;
-    padding: 50px;
-    margin: 10px;
-}
-.tarjeta__img{
-    width: 100%;
+*:focus {
+  outline: none;
 }
 
-.tarjeta__titulo{
-    margin: 8px;
+.formulario:first-child div {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.tarjeta__desc{
-    margin: 10px;
+.formulario:first-child div fieldset div {
+  margin-top: 15px;
 }
 
-.btn{
-    display: block;
-    width: 110px;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #141413;
-    color: white;
-    text-decoration: none;
-}
-.tarjeta__titulo--colorLetra{
-    color: rgb(216, 109, 109);
+.formulario:first-child div fieldset input, .formulario:first-child div fieldset textarea {
+  border: 1px #00bcd4 solid;
+  border-radius: 5px;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #00bcd4;
 }
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.card {
-    display: flex;
-    width: 10px;
-    column-gap: 10px;
-    margin: 10px;
-}
-.price{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.price span{
-    margin-top: 10px;
-    font-weight: bold;
-}
-video{
-    width:auto ;
-    height: auto;
-
-   
-}
-.headerIndex{
-    margin: auto;
-    background-image: url(../img/portadas/macetas.png);
-    background-size: cover;
-    width: 100%;
-    height: 100px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-size: auto;
-}
-.headerIndex-info{
-    color: white;
-}
-.form-contactos{
-    width: 400px;
-    height: 340px;
-    background: #4e4d4d;
-    margin: center;
-    margin-top: 180px;
-    box-shadow: 7px 13px 37px rgb(8, 5, 5);
-    padding: 20px 30px;
-    border-top: 4px solid #017bab;
-    color: white;
+.formulario:first-child div fieldset input:focus, .formulario:first-child div fieldset textarea:focus {
+  background: white;
+  color: black;
 }
 
-.form-contactos h3 {
-    margin: 0;
-    text-align: center;
-    height: 40px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid;
-    font-size: 20px;
-  }
-  .control {
-    width: 100%;
-    border: 1px solid #017bab;
-    margin-bottom: 15px;
-    padding: 11px 10px;
-    background: #f5dfdf;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  .boton {
-    width: 100%;
-    height: 40px;
-    background:#5f4a4a;
-    border: none;
-    color: white;
-    margin-bottom: 16px;
-  }
-  h1{
-    color: #2b2b2b;
-    padding: 2%;
-  }
-  .loading{
-    width: 100vw;
-    height: 100vh;
-    background-color:#f5dfdf ;
-    position: fixed;
-    z-index: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center
-
-  }
-
-  .loading i{
-    color: white;
-    font-size: 64px;
-    animation-name: rotar;
-    animation-duration: .5s;
-    animation-iteration-count: infinite;
-    
-  }
-  @keyframes rotar{
-    0%{
-        transform: rotateZ(0deg);
-
-    }
-    100%{
-        transform: rotateZ(360deg);
-    }
-  }
-
-  .header {
-    color: #5f4a4a;
-    font-size: 27px;
-    padding: 10px;
+.formulario:first-child div fieldset .submit {
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #00BCD4;
+  border-radius: 20px;
+  border: 2px solid #2196F3;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
 }
 
-.bigicon {
-    font-size: 35px;
-    color: #5f4a4a;
-}
-
+.formulario:first-child div fieldset .submit:hover {
+  color: #2196F3;
+  background-color: #ffffff;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
